@@ -1,4 +1,18 @@
 #{extends 'main.html' /}
-#{set title:'Home' /}
 
-#{welcome /}
+
+#{set 'header'}
+    #{include 'tags/header.html' /}
+#{/set}
+
+#{set 'sidebar'}
+    #{include 'tags/sidebar.html' /}
+#{/set}
+
+#{set 'maincontent'}
+    #{include 'tags/maincontent.html' /}
+#{/set}
+
+#{set 'footer'}
+    #{include 'tags/footer.html' /}
+#{/set}
